@@ -2,6 +2,8 @@ package homeworks;
 import java.util.Scanner;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import projects.Project08;
+import utilities.Calculator;
 import utilities.ScannerHelper;
 
 public class Practice01 {
@@ -16,7 +18,6 @@ public class Practice01 {
         System.out.println("The length of the string is = " + str.length());
         System.out.println("Indexes of SDLC is = " + str.indexOf("SDLC"));
         System.out.println("Indexes of application is = " + str.indexOf("application"));
-
 
         /*
         Assume that you are given a String as below;
