@@ -18,6 +18,7 @@ public class RecapArrayAndList {
         System.out.println(cities2);
         System.out.println(cities2.get(3)); // Denver
 
+        System.out.println("\n-----String Vector----\n");
         Vector<String> names = new Vector<>();
         names.add(null);
         names.add(null);
@@ -29,6 +30,25 @@ public class RecapArrayAndList {
         System.out.println(names.size());
         names.forEach(System.out::println);
         System.out.println("Name at index of 5 = " + names.get(5));
+
+        System.out.println("\n-----String LinkedList----\n");
+        LinkedList<String> objects1 = new LinkedList<>();
+        objects1.add("Phone");
+        objects1.add("Computer");
+        objects1.add("Airpods");
+        objects1.add("Screen");
+        objects1.add("Screen");
+        objects1.add(null);
+        objects1.add(null);
+        objects1.add(null);
+        objects1.add(null);
+
+        System.out.println(objects1.getLast());
+        System.out.println(objects1);
+        System.out.println(objects1.get(2)); // Airpods
+        System.out.println(objects1.stream().filter(Objects::isNull).count()); // 4
+
+
 
 
 

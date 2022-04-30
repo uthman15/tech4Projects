@@ -18,6 +18,6 @@ public class HashSetPractice {
         numbers.add(-55);
 
         // [5, 10, -3, 0, -7]
-        System.out.println(numbers);
+        System.out.println(numbers);//[0, -3, 5, -7, -55, 10]
     }
 }
