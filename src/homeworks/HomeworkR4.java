@@ -43,30 +43,30 @@ public class HomeworkR4 {
 
     //Task-6
     public static String noA(String[] arr){
-        String[] newArr = new String[arr.length];
-        for (int i = 0; i < arr.length; i++){
-            if (arr[i].toUpperCase().charAt(0) == 'A') newArr[i] = "###";
-            else newArr[i] = arr[i];
+        String[] newArr = new String[arr.length]; // need a place to store my new "###" element and the others that dont start with a
+        for (int i = 0; i < arr.length; i++){ //we need a loop b/c we need to check every word
+            if (arr[i].toUpperCase().charAt(0) == 'A') newArr[i] = "###"; // checking every word to see if it starts with a or A
+            else newArr[i] = arr[i]; // if element doesnt start with a then add that original element to new array
         }
-        return Arrays.toString(newArr);
+        return Arrays.toString(newArr); // need to do Arrays.toString() instead of just newArr because just newArr will return location
     }
 
     //Task-7
     public static String no3or5(int[] numbers){
-        int[] newArr = new int[numbers.length];
-        for(int i = 0; i < numbers.length; i++){
-            if ((numbers[i] % 5 == 0) && (numbers[i] % 3 == 0)) newArr[i] = 101;
+        int[] newArr = new int[numbers.length]; // we need to add the new edited numbers into the array with the others that arent divisble by either 5 or 3
+        for(int i = 0; i < numbers.length; i++){ // we need to check every element
+            if ((numbers[i] % 5 == 0) && (numbers[i] % 3 == 0)) newArr[i] = 101; //checking if divisible by 3 and 5 first to make sure that is checked... if we start with 5 or 3 then it won't check if its divisible by both!!! and then adding into a new array as the replaced number
             else if ((numbers[i] % 5 == 0)) newArr[i] = 99;
             else if(numbers[i] % 3 == 0) newArr[i] = 100;
-            else newArr [i] = numbers[i];
+            else newArr [i] = numbers[i]; // adding original numbers into new array that arent divisble by either 5 or 3
         }
-        return Arrays.toString(newArr);
+        return Arrays.toString(newArr); // need to do Arrays.toString() instead of just newArr because just newArr will return location
     }
 
     //Task-8
     public static int countPrimes(int[] numbers){
-        int count = 0;
-        for (int number : numbers){
+        int count = 0; // know we need to count so automatically make empty counting container
+        for (int number : numbers){ // we need to check every number so make a loop
             if (number == 2 || number == 3) count++;
             else if (number > 3){
                 boolean isPrime = true;
